@@ -8,9 +8,9 @@ public class twoDimensional {
 		int column;
 		
 		Scanner sc=new Scanner(System.in);
-		System.out.println("Enter rows and columns of 2-dimensional array:-");
-		row=sc.next();
-		column=sc.next();
+		System.out.println("Enter row and columns of 2-dimensional array:-");
+		row=sc.nextInt();
+		column=sc.nextInt();
 		String [][] names=new String[row][column];
 		System.out.println("Enter the  names:");
 		for(int i=0;i<row;i++)
@@ -18,6 +18,7 @@ public class twoDimensional {
 			for(int j=0;j<column;j++)
 			{
 				names[i][j]=sc.next();
+				
 			}
 		}
 		System.out.println("My array is:");
