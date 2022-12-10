@@ -1,4 +1,4 @@
-package mavenProject.reverse_string;
+package example.hello.my_first_system;
 
 /**
  * Hello world!
@@ -6,13 +6,16 @@ package mavenProject.reverse_string;
  */
 public class App 
 {
-    public static  String findReverse( String word ) {
-    String newName="";
-	for(int i=word.length()-1;i>=0;i--)
-	{
-		char value=word.charAt(i);
-		newName+=value;
-	}
-	return newName;
+    public static int findMax(int arr[])
+    {
+        int max=arr[0];
+        for(int i=0;i<arr.length;i++)
+        {
+        	if(max<arr[i]) {
+        		max=arr[i];
+        	}
+        }
+        return max;
     }
-}
+    }
+
